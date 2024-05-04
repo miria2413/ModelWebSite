@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="HTML, JS, CSS"/>    
+        <!--uso de palavras chaves-->    
+        <meta name="description" content="Modelo para site, contendo pagina inicial, login, cadastro."/> <!--descrição so site-->   
+        <meta name="author" content="MIRIÃ DA SILVA RIBEIRO"> 
+        <title> Modelo de site.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header style="background-image: url('img/background-home.jpg');">
+            <div class="container">
+                <nav>
+                    <a href="pag-inicial.html">
+                        <img src="img/logo.jpeg" alt="logo">
+                    </a>
+                    <ul class="ul">
+                        <a href="pag-inicial.html"> Home </a>
+                        <a href="sobre.html"> Sobre </a>
+                        <a class="btn" href="cadastro.html"> Cadastrar </a>
+                    </ul>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                    <div class="menu-icon" onclick="openMenu()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+
+                </nav>
+                <section class="banner">
+                    <div class="banner-text">
+                        <h1> Miriã Ribeiro </h1>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <div class="container-login">
+            <div class="img-box">
+                <img src="#" alt="#">
+            </div>
+            <div class="content-box">
+                <div class="form-box">
+                    <h2> Login </h2>
+                    <form>
+                        <div class="input-box">
+                            <span>E-mail:</span>
+                            <input type="email" placeholder="@gmail.com">
+                        </div>
+    
+                        <div class="input-box">
+                            <span>Senha:</span>
+                            <input type="password" placeholder="********">
+                        </div>
+                        <div class="remember">
+                            <label>
+                                <input type="checkbox"> Manter conectado. 
+                            </label>
+                            <a href="#">Esqueceu a Senha?</a>
+                        </div>
+                        <div class="input-box">
+                            <p> Não tem conta? <a href="cadastro.html"> Inscrever-se. </a></p>
+                        </div>
+                    </form>
+                    <h3> Logar Com </h3>
+                    <ul class="ul">
+                        <li><img src="facebook"></li>
+                        <li><img src="instagram"></li>
+                        <li><img src="github"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="links">
+                    <a href="#"> <i class="fa fa-facebook"></i></a>
+                    <a href="#"> <i class="fa fa-instagram"></i></a>
+                    <a href="#"> <i class="fa fa-github"></i></a>
+                    <a href="#"> <i class="fa fa-linkedin"></i></a>
+                </div>
+                <p> Desenvolvido por Miriã Ribeiro.</p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+   
