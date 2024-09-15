@@ -6,9 +6,15 @@
     padding: 0;
     box-sizing: border-box; /*a medida caixa seja apartir da bordar*/
   }
-  
-  header {
+
+  .logoo {
     display: flex;
+  }
+
+
+  header {
+    position: fixed;
+    display: block;
     background-color: rgb(182, 233, 240);
   }
 
@@ -17,9 +23,12 @@
     padding: 0.5rem;
   }
 
+  .menu-button {
+    display: none;
+  }
 
-  .menu {
-    padding: 1rem 25rem;
+  #menu {
+    padding: 1rem 14.4rem;
     background-color: rgb(182, 233, 240);
   }
 
@@ -80,6 +89,7 @@
   }
 
   #convite strong {
+    background-color: pink;
     color: rgb(247, 9, 48);
 
   }
@@ -87,8 +97,12 @@
   #fotos {
     margin: 0;
     padding: 5rem 0;
-    background-color: rgb(247, 241, 162);
+    background-color: white;
+    
   }
+
+ 
+
   h2 {
     display: flex;
     color: rgb(247, 9, 48);
@@ -104,6 +118,7 @@
     max-width: 1100px;
     margin: 0 auto;
     grid-gap: 40px;
+    
   }
 
   .card {
@@ -124,6 +139,7 @@
     height: 200px;
     margin-bottom: 15px;
   }
+
 
   .depo {
     font-family: "Nerko One", system-ui;
@@ -157,7 +173,7 @@
     display: flex;
     color: rgb(247, 9, 48);
     justify-content: center;
-    font-family: "Nerko One", system-ui;
+    font-family: "Nerko One", system-ui, sans-serif;
     font-size: 40px;
 
   }
@@ -165,7 +181,7 @@
   #local {
     margin: 0;
     min-height: 100vh;
-    background: rgb(182, 233, 240);
+    background: white;
     padding: 3rem ;
     text-align: center;
   }
@@ -177,7 +193,7 @@
 
   #convidados {
     margin: 0;
-    background-color: #c987cf8a;
+    background-color: rgb(255, 206, 214);
     padding: 2rem 0 0 0;
   }
 
@@ -190,7 +206,7 @@
   }
 
   label {
-    font-family: "Nerko One", system-ui;
+    font-family: "Nerko One", system-ui, sans-serif;
     font-size: 18px;
     color: #333;
     margin-bottom: 5px;
@@ -211,20 +227,22 @@
   
   
   button {
-    padding:  0.2rem;
-    font-family: "Nerko One", system-ui;
+    font-family: "Nerko One", system-ui, sans-serif;
     font-size: 25px;
-    color: #da4141;
     width: 10%;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #ec36827e;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
   }
 
   #presenca {
     
     margin: 0 20rem;
     padding:  5rem 10rem;
-    font-family: "Nerko One", system-ui;
+    font-family: "Nerko One", system-ui, sans-serif;
     font-size: 25px;
     color: #da4141;
     margin-bottom: 5px;
@@ -239,6 +257,134 @@
   footer {
     padding:24px 0;
     text-align: center;
-    font-size: 14px;
+    font-family: "Nerko One", system-ui, sans-serif;
+    font-size: 25px;
+    background-color: rgb(182, 233, 240);
   }
   
+
+
+  
+
+  @media (max-width: 768px) {
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .user img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .logoo {
+      display: flex;
+      padding: 0;
+      border: 3px solid red;
+    }
+    .logoo a {
+      padding: 0 11rem;
+    }
+  
+    #menu {
+      padding: 2rem;
+      display: none;
+      
+    }
+
+    #convite {
+      padding: 8rem 17rem 5rem 1rem;
+    }
+  
+    #convite h1 {
+      padding: 0;
+      font-size: 10px;
+    }
+  
+    #convite p {
+      font-size: 10px;
+      margin-top: 20px;
+    }
+  
+    #fotos {
+      margin: 0;
+      padding: 0
+    }
+  
+    h2 {
+      margin: 1rem;
+      font-size: 20px;
+    }
+  
+    .cards {
+      max-width: 768px;
+      grid-gap: 10px;
+    }
+  
+    .card {
+      padding: 5px 0;
+    }
+  
+    .card .user {
+      width: 70px; /*tamanho da foto */
+      height: 70px;
+    }
+  
+  
+    #video {
+      margin: 0;
+      padding: 2rem 0 ;  
+    }
+  
+    video {
+      width: 350px; /*tamanho da foto */
+    }
+  
+    .video {
+      display: block;
+      font-size: 20px;
+  
+    }
+  
+    #local {
+      padding: 2rem ;
+    }
+  
+    iframe {
+      width: 400px; /*tamanho da foto */
+      height: 200px;
+    }
+  
+    #convidados {
+      padding: 0.5rem 0;
+    }
+  
+    form {
+      justify-items: left;
+      padding: 8px;
+    }
+  
+    label {
+      font-size: 10px;
+    }
+    
+    input {
+      width: 50%;
+      padding: 0.2rem ;
+    }
+        
+    button {
+      font-size: 15px;
+      width: 20%;
+    }
+  
+    #presenca {
+      margin: 0 50%;
+      padding:  1rem;
+      font-size: 15px;
+      width: 30%;
+      padding: 0.2rem ;  
+    }
+  }
