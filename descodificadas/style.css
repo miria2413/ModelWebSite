@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*a medida caixa seja apartir da bordar*/
+  }
+  
+  header {
+    display: flex;
+    background-color: rgb(182, 233, 240);
+  }
+
+
+  .logo {
+    padding: 0.5rem;
+  }
+
+
+  .menu {
+    padding: 1rem 25rem;
+    background-color: rgb(182, 233, 240);
+  }
+
+  ul {
+    list-style: none; /*estilo da lista: nenhum */
+    display: flex;
+  }
+  
+  ul li a {
+    padding: 16px 24px;
+  } 
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+  }
+  #convite {
+    margin: 0;
+    padding: 8rem 35rem 4rem 4rem;
+    background-image: url(./img/convite.png);
+    background-repeat: no-repeat; /*tirar repetição da imagem*/
+    background-position: left center; /*posição, colocar imagem no centro X e Y*/
+    background-size: cover; /*para cobrir toda area disponivel*/
+  }
+
+  #convite h1 {
+    color: rgb(247, 9, 48);
+    font-size: 50px;
+    font-family: "Nerko One", system-ui;
+  }
+
+  #convite p {
+    color: rgb(22, 22, 22);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Nerko One", system-ui;
+    margin-top: 40px;
+  }
+
+  #convite strong {
+    color: rgb(247, 9, 48);
+
+  }
+
+  #fotos {
+    margin: 0;
+    padding: 5rem 0;
+    background-color: rgb(247, 241, 162);
+  }
+  h2 {
+    display: flex;
+    color: rgb(247, 9, 48);
+    justify-content: center;
+    margin: 0 0 5rem 0;
+    font-family: "Nerko One", system-ui;
+    font-size: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-gap: 40px;
+  }
+
+  .card {
+    background-color: rgb(182, 233, 240);
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 30px;
+    box-shadow: 6px 6px 10px #0000005d; /*sobra atras da foto*/
+
+
+  }
+
+  .card .user {
+    width: 250px; /*tamanho da foto */
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .depo {
+    font-family: "Nerko One", system-ui;
+    text-align: center;
+    font-size: 17px;
+  }
+
+
+
+  .titulo {
+
+    font-weight: 900;
+    color: rgb(236, 14, 162);
+  }
+
+
+  #video {
+    margin: 0;
+    padding: 5rem ;
+    background-color: rgb(255, 206, 214); 
+    text-align: center;
+
+  }
+
+  video {
+    width: 800px; /*tamanho da foto */
+  }
+
+  .video {
+    
+    display: flex;
+    color: rgb(247, 9, 48);
+    justify-content: center;
+    font-family: "Nerko One", system-ui;
+    font-size: 40px;
+
+  }
+
+  #local {
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(182, 233, 240);
+    padding: 3rem ;
+    text-align: center;
+  }
+
+  iframe {
+    width: 800px; /*tamanho da foto */
+    height: 400px;
+  }
+
+  #convidados {
+    margin: 0;
+    background-color: #c987cf8a;
+    padding: 2rem 0 0 0;
+  }
+
+  form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 5rem;
+  }
+
+  label {
+    font-family: "Nerko One", system-ui;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 30%;
+    padding: 0.8rem ;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    border-color: rgb(182, 233, 240);
+    outline: none;
+  }
+  
+  
+  button {
+    padding:  0.2rem;
+    font-family: "Nerko One", system-ui;
+    font-size: 25px;
+    color: #da4141;
+    width: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #presenca {
+    
+    margin: 0 20rem;
+    padding:  5rem 10rem;
+    font-family: "Nerko One", system-ui;
+    font-size: 25px;
+    color: #da4141;
+    margin-bottom: 5px;
+    width: 50%;
+    padding: 0.8rem ;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+  }
+  
+  footer {
+    padding:24px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  

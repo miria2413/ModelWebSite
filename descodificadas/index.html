@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Eloá faz 6 ...</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+    <header>
+        <a href="#convite"><h3 class="logo"><img src="./img/faz.png"></h3></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#convite"> Convite </a></li>
+                <li><a href="#fotos"> Fotos </a></li>
+                <li><a href="#video"> Video </a></li>
+                <li><a href="#local"> Local </a></li>
+                <li><a href="#convidados"> Convidados </a></li>
+                <li><a href="#convidados"> Confirmar </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="convite">
+        <h1 class="titulo"> ESTÁ CHEGANDO O DIA MAIS ESPERADO DO ANOOOO !!  </h1>
+        <p> Você está sendo convidado para um dia muitoooo especiallll ......<br> Dia <strong> 28/09/2024 </strong> , vamos comemorar o aniversário da nossa Princesa Lolo ... No mundo encantado dos Unicórnios .... <br> E queremos que você faça parte desse dia !! então venha comemorar esse dia com a gente !! <br><strong>#EloáFaz6...</strong></p>
+    </section>
+    <section id="fotos">
+        <h2> UM SPOILER DO QUE VEM POR AIIIII !!! </h2>
+
+        <div class="cards">
+            <div class="card">
+                <img class="user" src="./img/bexigas.jpg" alt="Decoração de ambiente com bexigas coloridas das cores rosa, roxo, azul, balões transparentes com bilho e um painel de fundo na cor rosa claro e branco. "/>
+                <p class="depo"> Decoração com muitas cores e bilhos para deixa o ambiente com a cara do mundo encantado dos Unicórnios !!</p>
+            </div>
+            <div class="card">
+                <img class="user" src="./img/bolo.jpg" alt="Foto de um bolo de Unicórnio decorado com chatilly com as cores amarela, rosa claro e roxo. E com topper de bolo com unicornio, borboletas, nuvens e corações. "/>
+                <p class="depo">O bolo do mundo encantado dos unicónios com detalhes bem delicados, cores claras e que combine com a decoração... </p>
+            </div>
+            <div class="card">
+                <img class="user" src="./img/doces.jpg" alt="Foto de doces decorados com o tema de unicornio."/>
+                <p class="depo"> E tambem muitos comes e bebes deliciosos para deixar a experiência ainda melhor ... </p>
+            </div>
+        </div>
+        
+    </section>
+    <section id="video">
+        <p class="video"> Aperte o PLAY !!</p>
+        <div>
+            <video src="./media/Eloá faz 6 (1).mp4" controls></video>
+        </div>
+    </section>
+    <section id="local">
+        <p class="video"> Veja o local da diverção !! </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467688.8949511927!2d-46.595299199999985!3d-23.68241239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1726360271467!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="convidados">
+        <h2 class="conv"> Confirmando os Nomes dos Convidados.</h2>
+        <form action="/action_page.php">
+            <label> Nome Completo :</label> 
+            <input type="text" id="User" name="Name" placeholder="Maria"/>
+            
+            <label for="quantity"> Quantos Acompanhante:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <button type="button" onclick="Evento()">Adicionar</button>
+
+        </form>
+        <button id="presenca" type="button" ><a href="https://www.whatsapp.com/download?lang=pt_br"> Confirmar presença de todos !</a></button>
+    </section>
+    <footer>
+        Feito por Miriã Ribeiro - Para Fins Didáticos.
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

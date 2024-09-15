@@ -1,0 +1,3 @@
+function Evento(){
+  alert('Adicionado !')
+}
